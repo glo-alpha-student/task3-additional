@@ -1,36 +1,34 @@
 'use strict';
 
-let lang = 'ru';
 
+let lang = 'en';
+let arr1 = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
+let arr2 = ['Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun'];
 
 if (lang == 'ru') {
-    var arr = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
+    arr1;
+    console.log(arr1);
 } else if (lang == 'en') {
-    arr = ['Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun'];
+    arr2;
+    console.log(arr2);
 }
-console.log(arr);
-
 
 switch (lang) {
     case 'ru':
-        arr = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
-        console.log(arr);
+        arr1;
+        console.log(arr1);
         break;
     case 'en':
-        arr = ['Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun'];
-        console.log(arr);
+        arr2;
+        console.log(arr2);
         break;
 }
 
-
-arr = {
-    'ru': ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'],
-    'en': ['Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun'],
+let arr = {
+    'ru': arr1,
+    'en': arr2,
 };
 console.log(arr[lang]);
-
-
-
 
 
 let namPerson = 'Артем';
